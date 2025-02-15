@@ -1,0 +1,180 @@
+@import "tailwindcss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --btn-bg: #0548ae;
+  --btn-border: #0a48a4;
+  /* 13, 202, 240 */
+  --bs-info-rgb: 16, 37, 69;
+}
+
+.btn {
+  background-color: var(--btn-bg) !important;
+  border-color: var(--btn-bg) !important ;
+}
+.btn:hover {
+  background-color: var(--btn-border) !important;
+  border-color: var(--btn-border) !important ;
+}
+p {
+  margin-bottom: 0;
+}
+.img {
+  background-image: url(../backgroundImg.avif);
+  background-size: cover;
+  transition: all 1s;
+}
+
+.login,
+.register {
+  transition: all 1s;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.37),
+    0px 0px 5px 2px rgba(0, 0, 0, 0.305);
+  background-color: white;
+  width: 35%;
+  height: 60%;
+  transform: translateX(8%);
+}
+
+.input-group span {
+  border-left: 5px solid rgb(2, 2, 97);
+}
+
+.moveLeft {
+  transform: translateX(-80%);
+}
+.moveRight {
+  transform: translateX(125%);
+}
+
+@media (max-width: 1199px) {
+  .login {
+    transform: translateX(25px) !important;
+    width: 50% !important;
+  }
+}
+@media (max-width: 991px) {
+  .login {
+    transform: translateX(10px) !important;
+    width: 50% !important;
+  }
+}
+@media (max-width: 767px) {
+  .login {
+    transform: translateX(10px) !important;
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    gap: 10px;
+    padding: 0px 10px;
+  }
+  .img {
+    /* order: -1 !important;
+    width: 100% !important; */
+    font-size: 15px !important;
+    padding: 10px !important;
+  }
+  .img h2 {
+    font-size: 15px !important;
+  }
+  .img .btn {
+    padding: 5px 20px !important;
+    font-size: 15px;
+  }
+  .login {
+    width: 47% !important;
+    transform: translateX(20px) !important;
+    height: 67% !important;
+    font-size: 10px !important;
+    padding: 15px !important;
+    gap: 10px !important;
+  }
+  .login p {
+    font-size: 10px !important;
+  }
+  .login > p:first-child {
+    font-size: 15px !important;
+  }
+  .login input::placeholder {
+    font-size: 12px !important;
+  }
+  .login svg {
+    font-size: 12px !important;
+  }
+  .login .btn {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    gap: 10px;
+    padding: 0px 10px;
+  }
+  .img {
+    /* order: -1 !important;
+    width: 100% !important; */
+    font-size: 15px !important;
+    padding: 10px !important;
+  }
+  .img h2 {
+    font-size: 15px !important;
+  }
+  .img .btn {
+    padding: 5px 20px !important;
+    font-size: 15px;
+  }
+  .login {
+    width: 47% !important;
+    /* transform: translateX(0) !important; */
+    height: 67% !important;
+    font-size: 10px !important;
+    padding: 15px !important;
+    gap: 10px !important;
+  }
+  .login p {
+    font-size: 10px !important;
+  }
+  .login > p:first-child {
+    font-size: 15px !important;
+  }
+  .login input::placeholder {
+    font-size: 12px !important;
+  }
+  .login svg {
+    font-size: 12px !important;
+  }
+  .login .btn {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    gap: 10px;
+    padding: 0px 20px;
+  }
+  .img {
+    order: -1 !important;
+    width: 100% !important;
+    font-size: 15px !important;
+    padding: 12px;
+  }
+  .img h2 {
+    font-size: 15px !important;
+  }
+  .img .btn {
+    padding: 5px 20px !important;
+    font-size: 15px;
+  }
+  .login {
+    width: 100% !important;
+    transform: translateX(0) !important;
+    height: 100% !important;
+    padding: 20px !important;
+  }
+}
