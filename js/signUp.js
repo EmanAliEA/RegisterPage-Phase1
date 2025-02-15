@@ -73,7 +73,7 @@ function goToProfile(user) {
   // const fullUrl = `${baseUrl}?${queryString}`;
 
   // Redirect to the new URL
-  window.location.href = "/src/profile.html";
+  window.location.href = "/assets/profile.html";
 }
 
 img_btn.addEventListener("click", (e) => {

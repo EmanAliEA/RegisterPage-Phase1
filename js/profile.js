@@ -24,5 +24,5 @@ function profile() {
 profile();
 
 logOut.addEventListener("click", () => {
-  window.location.href = "../../index.html";
+  window.location.href = "../index.html";
 });
